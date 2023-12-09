@@ -1,0 +1,11 @@
+first of all - 
+the exercise :
+Exercise 5.3 Consider SHA-512-n, a hash function that first runs SHA-512 and then outputs only the first  bits of the result. Write a program that uses a birthday attack to find and output a collision on SHA-512-n, where n is a multiple of 8 between 8 and 48. Your program may use an existing cryptography library. Time how long your program takes when n is 16, averaged over five runs for each  How long would you expect your program to take for SHA-512-256? For SHA-512?
+
+get a hash function to run sha-512, then apply cutting it to the first n bits, then write a class for birthday attack. 
+So, birthday attack - well, need to find two inputs with the same output. So, probably brute force only.
+pseudocode :
+- create a birthday attack class
+    - find two inputs with the same output. So, randomly moving among the inputs.
+- implement the SHA-512-n function. 
+- pass it in the birthday attack
